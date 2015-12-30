@@ -1,0 +1,41 @@
+defaults:
+  site_url: https://<%= @app_name %>.com
+  host_name: <%= @app_name %>.com
+  site_name: <%= @site_name %>
+
+  secret_key_base:
+
+  devise:
+    secret_key:
+
+  db:
+    host: localhost
+    username: postgres
+    password:
+
+  stripe:
+    secret_key:
+    publishable_key:
+
+  sendgrid:
+    username:
+    password:
+
+  aws:
+    access_key:
+    secret_key:
+    s3_bucket:
+
+development:
+  site_url: http://<%= @app_name %>.dev
+  host_name: <%= @app_name %>.dev
+
+staging:
+  site_url: https://staging.<%= @app_name %>.com
+  host_name: staging.<%= @app_name %>.com
+
+test:
+  site_url: http://example.com
+  host_name: example.com
+
+production:

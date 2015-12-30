@@ -1,0 +1,58 @@
+add gems
+
+setup config
+  sekrets
+
+  config files
+    application.rb
+    database.yml
+    secrets.yml
+
+  initializers
+    devise
+
+  environments
+
+  genreators
+    devise account
+    devise admin_account
+    devise:views
+    friendly_id
+    kaminari
+    simple_form
+
+controllers
+  admin
+    base (whole file)
+
+  application (add sections)
+  attachments (whole file)
+  pages
+  concerns
+    public_controller
+
+decorators
+  account
+  application (whole file)
+
+helpers
+  app helper (paginate methods)
+
+models
+  attachment
+  profile (account)
+
+uploaders
+  attachment (whole file)
+
+views
+  admin
+    index
+    accounts/
+
+capistrano
+  tasks
+    db
+    bounce
+    sekrets
+    seeds

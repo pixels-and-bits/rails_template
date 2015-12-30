@@ -1,0 +1,47 @@
+defaults:
+  secret_key_base:
+
+  devise:
+    secret_key:
+
+  db:
+    host: localhost
+    username: postgres
+    password:
+
+  stripe:
+    secret_key:
+    publishable_key:
+
+  sendgrid:
+    username:
+    password:
+
+  aws:
+    access_key:
+    secret_key:
+    s3_bucket:
+
+development:
+  secret_key_base: <%= SecureRandom.hex(32) %>
+
+  devise:
+    secret_key: <%= SecureRandom.hex(32) %>
+
+staging:
+  secret_key_base: <%= SecureRandom.hex(32) %>
+
+  devise:
+    secret_key: <%= SecureRandom.hex(32) %>
+
+test:
+  secret_key_base: <%= SecureRandom.hex(32) %>
+
+  devise:
+    secret_key: <%= SecureRandom.hex(32) %>
+
+production:
+  secret_key_base: <%= SecureRandom.hex(32) %>
+
+  devise:
+    secret_key: <%= SecureRandom.hex(32) %>

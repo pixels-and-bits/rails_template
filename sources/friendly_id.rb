@@ -1,0 +1,1 @@
+generate 'friendly_id'
