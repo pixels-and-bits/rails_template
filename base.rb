@@ -11,6 +11,9 @@ apply "#{ENV['SOURCE']}/sources/helpers.rb"
   friendly_id
   kaminari
   sidekiq
+  devise
+  accounts
+  admin_accounts
   admin
   pages
   capistrano
@@ -21,8 +24,8 @@ apply "#{ENV['SOURCE']}/sources/helpers.rb"
   apply "#{ENV['SOURCE']}/sources/#{f}.rb"
 end
 
-  # accounts
-  # admin_accounts
+rake 'db:migrate'
+
 
   # generators
   # admin

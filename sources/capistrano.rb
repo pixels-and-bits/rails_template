@@ -1,7 +1,4 @@
-# run 'bundle exec cap install'
-
-# @repo_owner = ask("Who owns this repo on GitHub?")
-@repo_owner = 'foo'
+@repo_owner = ask("Who owns this repo on GitHub?")
 
 file 'Capfile',
   processed_file('Capfile')

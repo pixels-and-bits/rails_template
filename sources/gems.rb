@@ -52,4 +52,5 @@ gem_group :test do
   gem 'rspec-rails'
 end
 
-run 'bundle install --path vendor/bundle'
+# run 'bundle install --path vendor/bundle'
+run 'bundle install'

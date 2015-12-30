@@ -1,9 +1,7 @@
 file 'lib/config.rb',
   processed_file("lib/config.rb")
 
-# @site_name = ask("What is the name of this website (page title)")
-
-@site_name = "remove me"
+@site_name = ask("What is the name of this website (page title)")
 
 file 'config/config.yml',
   processed_file("config/config.yml")
