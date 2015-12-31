@@ -4,9 +4,6 @@ Rails.application.routes.draw do
 
   devise_for :accounts,
     path: '/',
-    controllers: {
-      registrations: 'devise/account_registrations'
-    },
     path_names: {
       sign_in: 'login',
       sign_out: 'logout',
