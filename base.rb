@@ -4,6 +4,7 @@ ENV['SOURCE'] ||= 'http://github.com/pixels-and-bits/strappy/raw/master'
 apply "#{ENV['SOURCE']}/sources/helpers.rb"
 
 %w(
+  prompts
   gems
   application_config
   config_sekrets
@@ -19,17 +20,11 @@ apply "#{ENV['SOURCE']}/sources/helpers.rb"
   capistrano
   routes
   rake_tasks
+  application
   assets
+  permissions
 ).each do |f|
   apply "#{ENV['SOURCE']}/sources/#{f}.rb"
 end
 
 rake 'db:migrate'
-
-
-  # generators
-  # admin
-  # home_page
-  # rake_tasks
-  # javascripts
-  # initializers

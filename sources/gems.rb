@@ -1,16 +1,21 @@
 # UI/Frontend
 gem 'jquery-turbolinks'
 gem 'bootstrap-sass'
+gem 'bootstrap-kaminari-views'
+gem 'momentjs-rails'
+gem 'bootstrap3-datetimepicker-rails'
 gem 'draper'
 gem 'faker'
 gem 'kaminari'
-gem 'bootstrap-kaminari-views'
 gem 'simple_form'
 
 # configuration
 gem 'config_reader'
 gem 'sekrets'
 gem 'request_store'
+
+# helpers
+gem 'coerce'
 
 # auth
 gem 'devise'

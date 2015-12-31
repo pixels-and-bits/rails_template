@@ -1,4 +1,4 @@
-@repo_owner = ask("Who owns this repo on GitHub?")
+# @repo_owner = ask("Who owns this repo on GitHub?")
 
 file 'Capfile',
   processed_file('Capfile')

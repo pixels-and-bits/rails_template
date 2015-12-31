@@ -3,10 +3,12 @@ file_inject('config/application.rb',
   '
     # Auto Load
     config.autoload_paths += %W(
+      #{config.root}/app/permissions
       #{config.root}/lib
     )
 
     config.eager_load_paths += %W(
+      #{config.root}/app/permissions
       #{config.root}/lib
     )
 

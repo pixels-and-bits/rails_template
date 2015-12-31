@@ -16,4 +16,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require dmuploader
+//= require ie10-viewport-bug-workaround
 //= require_tree .
