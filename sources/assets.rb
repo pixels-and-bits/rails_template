@@ -4,11 +4,14 @@ file 'vendor/assets/javascripts/dmuploader.js',
 file 'app/assets/javascripts/application.js',
   processed_file('app/assets/javascripts/application.js')
 
-file 'app/assets/javascripts/attachments.js',
-  processed_file('app/assets/javascripts/attachments.js.coffee')
+file 'app/assets/javascripts/app/common.js',
+  processed_file('app/assets/javascripts/app/common.js.coffee')
 
-file 'app/assets/javascripts/modals.js',
-  processed_file('app/assets/javascripts/modals.js.coffee')
+file 'app/assets/javascripts/app/attachments.js',
+  processed_file('app/assets/javascripts/app/attachments.js.coffee')
+
+file 'app/assets/javascripts/app/modals.js',
+  processed_file('app/assets/javascripts/app/modals.js.coffee')
 
 file 'vendor/assets/javascripts/ie10-viewport-bug-workaround.js',
   processed_file('vendor/assets/javascripts/ie10-viewport-bug-workaround.js')

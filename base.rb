@@ -28,3 +28,7 @@ apply "#{ENV['SOURCE']}/sources/helpers.rb"
 end
 
 rake 'db:migrate'
+
+git :init
+git add: '.'
+git commit: '-a -m "Initial commit"'
