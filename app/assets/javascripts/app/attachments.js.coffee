@@ -27,6 +27,7 @@
               elem.html(data.markup).fadeIn()
             else
               elem.prop('src', data.url).fadeIn()
+
             $("#upload-file" + id).html null
       else
         $("#upload-file" + id).html data.markup
