@@ -21,3 +21,10 @@ file 'app/views/shared/_flash_messages.html.erb',
 
 file 'config/database.yml',
   processed_file('config/database.yml')
+
+file_append 'config/initializers/assets.rb',
+  '
+Dir.glob("#{Rails.root}/app/assets/images/**/").each do |path|
+  Rails.application.config.assets.paths << path
+end
+  '
