@@ -8,6 +8,7 @@ gem 'draper'
 gem 'faker'
 gem 'kaminari'
 gem 'simple_form'
+gem 'sidekiq'
 
 # configuration
 gem 'config_reader'
@@ -51,11 +52,28 @@ gem_group :development do
   gem 'capistrano-rbenv'
   gem 'capistrano-rails'
   gem 'capistrano-sidekiq'
+  gem 'capistrano-rails-console'
+
+  gem 'guard-bundler'
+  gem 'guard-rspec'
+  gem 'guard-migrate'
+  gem 'terminal-notifier'
+  gem 'terminal-notifier-guard'
 end
 
 gem_group :test do
+  gem 'capybara'
+  gem 'capybara-screenshot'
+  gem 'database_cleaner'
+  gem 'email_spec'
+  gem 'launchy'
+  gem 'poltergeist'
   gem 'rspec-rails'
 end
 
+group :development, :test do
+  gem 'factory_girl_rails'
+end
+
 # run 'bundle install --path vendor/bundle'
-run 'bundle install'
+run 'bundle install --path vendor/bundle'

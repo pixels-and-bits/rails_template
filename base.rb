@@ -27,7 +27,7 @@ apply "#{ENV['SOURCE']}/sources/helpers.rb"
   apply "#{ENV['SOURCE']}/sources/#{f}.rb"
 end
 
-rake 'db:migrate'
+rake 'db:bounce'
 
 git :init
 git add: '.'

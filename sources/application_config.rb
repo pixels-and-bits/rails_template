@@ -31,3 +31,9 @@ file_inject('config/application.rb',
   ',
   :before
 )
+
+file_str_replace(
+  'config/secrets.yml',
+  'ENV["SECRET_KEY_BASE"]',
+  'Config.secret_key_base'
+)

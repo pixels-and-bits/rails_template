@@ -9,7 +9,7 @@ ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, '/var/www/my_app_name'
-set :deploy_to, "/var/webapps/#{fetch(:application)}/#{fetch(:stage)}"
+set :deploy_to, "/ebs/webapps/#{fetch(:application)}/#{fetch(:stage)}"
 
 set :ssh_options, { forward_agent: true }
 
@@ -39,7 +39,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 # set :keep_releases, 5
 
 set :rbenv_type, :system
-set :rbenv_ruby, '2.2.3'
+set :rbenv_ruby, '2.3.0'
 
 namespace :deploy do
 
