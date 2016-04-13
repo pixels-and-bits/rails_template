@@ -23,8 +23,7 @@ namespace :db do
     end
 
     run_locally do
-      system('bundle exec rake db:drop db:create')
-      execute :psql, '-U', 'postgres', '-c', '-d', 'britehub_web_dev', '-f', local_path
+      system("bundle exec rake db:drop db:create db:load[#{local_path}]")
     end
 
     on primary fetch(:migration_role) do

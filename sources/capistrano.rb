@@ -12,9 +12,9 @@ file 'config/deploy/staging.rb',
 file 'config/deploy/production.rb',
   processed_file('config/deploy/production.rb')
 
-%w(bounce restart seeds sekrets).each do |task|
+Dir['lib/capistrano/**/*'].each do |task|
 
-  file "lib/capistrano/tasks/#{task}",
-    processed_file("lib/capistrano/tasks/#{task}.rake")
+  file task,
+    processed_file(task)
 
 end

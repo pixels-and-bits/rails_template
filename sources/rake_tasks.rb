@@ -1,6 +1,6 @@
-%w(db).each do |task|
+Dir['lib/tasks/**/*'].each do |task|
 
-  file "lib/tasks/#{task}",
-    processed_file("lib/tasks/#{task}.rake")
+  file task,
+    processed_file(task)
 
 end
