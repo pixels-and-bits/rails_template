@@ -71,7 +71,7 @@ gem_group :test do
   gem 'rspec-rails'
 end
 
-group :development, :test do
+gem_group :development, :test do
   gem 'factory_girl_rails'
 end
 
