@@ -1,5 +1,5 @@
 # use this for local installs
-ENV['SOURCE'] ||= 'http://github.com/pixels-and-bits/strappy/raw/master'
+ENV['SOURCE'] ||= 'https://github.com/pixels-and-bits/rails_template/raw/master'
 
 apply "#{ENV['SOURCE']}/sources/helpers.rb"
 
