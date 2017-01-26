@@ -42,9 +42,6 @@ gem_group :development do
   # pin versions after bundling
   gem 'pessimize'
 
-  # less noisy dev logs
-  gem 'quiet_assets'
-
   # deployment stuff
   gem 'airbrussh', require: false
   gem 'capistrano'
