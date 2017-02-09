@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.4.0'
+lock '3.7.2'
 
 set :application, '<%= @app_name %>'
 set :repo_url, 'git@github.com:<%= @repo_owner %>/<%= @app_name %>.git'
@@ -39,7 +39,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 # set :keep_releases, 5
 
 set :rbenv_type, :system
-set :rbenv_ruby, '2.3.0'
+set :rbenv_ruby, '2.3.3'
 
 namespace :deploy do
 

@@ -10,7 +10,7 @@ module Admin
     end
 
     def become_account
-      account = User.find(params[:id])
+      account = Account.find(params[:id])
       sign_out(current_account) if current_account
       sign_in(:account, account, bypass: true)
     end

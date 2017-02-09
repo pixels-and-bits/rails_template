@@ -1,14 +1,18 @@
+gem 'thor', '0.19.1'
+gem 'pg'
+
 # UI/Frontend
 gem 'jquery-turbolinks'
 gem 'bootstrap-sass'
-gem 'bootstrap-kaminari-views'
 gem 'momentjs-rails'
 gem 'bootstrap3-datetimepicker-rails'
-gem 'draper'
+gem 'draper', '~> 3.0.0.pre1'
 gem 'faker'
 gem 'kaminari'
 gem 'simple_form'
 gem 'sidekiq'
+gem 'jstz-rails', git: 'https://github.com/vanetten/jstz-rails.git'
+gem 'browser-timezone-rails'
 
 # configuration
 gem 'config_reader'
@@ -32,10 +36,10 @@ gem 'mini_magick'
 # search
 gem 'ransack'
 
-# debugging
-gem 'pry-rails'
-
 gem_group :development do
+  # debugging
+  gem 'pry-rails'
+
   # lazy mans way to eliminating N+1
   gem 'bullet'
 
@@ -51,11 +55,11 @@ gem_group :development do
   gem 'capistrano-sidekiq'
   gem 'capistrano-rails-console'
 
-  gem 'guard-bundler'
-  gem 'guard-rspec'
-  gem 'guard-migrate'
-  gem 'terminal-notifier'
-  gem 'terminal-notifier-guard'
+  # gem 'guard-bundler'
+  # gem 'guard-rspec'
+  # gem 'guard-migrate'
+  # gem 'terminal-notifier'
+  # gem 'terminal-notifier-guard'
 end
 
 gem_group :test do

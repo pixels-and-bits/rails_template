@@ -35,7 +35,7 @@
   , $.attachmentUpload)
 ) jQuery, this
 
-$(document).ready ->
+$( document ).on 'turbolinks:load', ->
 
   $('[data-js=drop-zone]').each ->
     $elem = $(this)

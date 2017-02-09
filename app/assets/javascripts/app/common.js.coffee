@@ -1,4 +1,4 @@
-$(document).ready ->
+$( document ).on 'turbolinks:load', ->
   window.initializeSelect2 = ->
     $('.select2').select2()
 

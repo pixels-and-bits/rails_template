@@ -1,16 +1,11 @@
 module ApplicationHelper
 
-  def paginate(objects, options = {})
-    options.reverse_merge!(theme: 'twitter-bootstrap-3')
-    super(objects, options)
-  end
-
   def yes_no(bool)
     bool ? 'Yes' : 'No'
   end
 
   def active?(controller)
-    "active" if Coerce.list_of_strings(controller).include?(controller_name)
+    controller == controller_name
   end
 
   def active_class(controller)
@@ -18,7 +13,7 @@ module ApplicationHelper
   end
 
   def action_active?(action)
-    "active" if action == action_name
+    action == action_name
   end
 
   def action_active_class(action)
